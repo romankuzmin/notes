@@ -1,0 +1,16 @@
+{
+    "app.locales": "Jazyky",
+    "notes.title": "Poznámky",
+    "notes.add": "Přidat poznámku",
+    "notes.detail.form.title": "Název",
+    "notes.detail.form.title.validation": "Název musí mít alespoň 3 znaky",
+    "notes.detail.creating": "Vytvářím...",
+    "notes.detail.updating": "Ukládám...",
+    "notes.detail.deleting": "Odstraňuji...",
+    "notes.detail.undo": "Zrušit",
+    "notes.detail.create": "Vytvořit",
+    "notes.detail.save": "Uložit",
+    "notes.detail.delete": "Odstranit",
+    "notes.detail.errors.updating": "Neočekávaná chyba při ukládání... zkuste to později",
+    "notes.detail.errors.deleting": "Neočekávaná chyba při mazání... zkuste to později"
+}

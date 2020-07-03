@@ -1,0 +1,16 @@
+{
+    "app.locales": "Languages",
+    "notes.title": "Notes",
+    "notes.add": "Add Note",
+    "notes.detail.form.title": "Title",
+    "notes.detail.form.title.validation": "The name must be at least 3 characters long",
+    "notes.detail.creating": "Creating...",
+    "notes.detail.updating": "Updating...",
+    "notes.detail.deleting": "Deleting...",
+    "notes.detail.undo": "Undo",
+    "notes.detail.create": "Create",
+    "notes.detail.save": "Save",
+    "notes.detail.delete": "Delete",
+    "notes.detail.errors.updating": "Unexpected save error ... please try again later",
+    "notes.detail.errors.deleting": "Unexpected delete error ... please try again later"
+}
