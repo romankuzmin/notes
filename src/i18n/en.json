@@ -4,6 +4,7 @@
     "notes.add": "Add Note",
     "notes.refresh": "Refresh",
     "notes.errors.fetching": "Unexpected error loading list",
+    "notes.list.blank": "Notes are blank. It's time to create one ...",
     "notes.detail.form.title": "Title",
     "notes.detail.form.title.validation": "The name must be at least 3 characters long",
     "notes.detail.creating": "Creating...",

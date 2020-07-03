@@ -4,6 +4,7 @@
     "notes.add": "Přidat poznámku",
     "notes.refresh": "Obnovit",
     "notes.errors.fetching": "Neočekávaná chyba při načítaní seznamu",
+    "notes.list.blank": "Poznámky jsou prázdné. Je čas nějakou vytvořit ...",
     "notes.detail.form.title": "Název",
     "notes.detail.form.title.validation": "Název musí mít alespoň 3 znaky",
     "notes.detail.creating": "Vytvářím...",

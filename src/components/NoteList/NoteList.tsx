@@ -6,9 +6,8 @@ import { FormattedMessage } from 'react-intl';
 import NoteListItem from './NoteListItem';
 
 const useStyles = makeStyles({
-    root: {
-        // maxWidth: '800px',
-        // margin: 'auto 0',
+    emptyList: {
+        color: 'gray',
     },
 });
 
@@ -41,17 +40,19 @@ const NoteList: FC<NoteListProps> = ({ items = [], loading = false }) => {
                     <NoteListItem key={item.id} {...item} />
                 ),
             )}
-            {list.length === 0 && !loading && <ListItemText primary={<FormattedMessage id={'notes.empty'} />} />}
+            {list.length === 0 && !loading && (
+                <ListItemText className={classes.emptyList} primary={<FormattedMessage id={'notes.list.blank'} />} />
+            )}
         </List>
     );
 
     return (
-        <div className={classes.root}>
+        <>
             <Hidden xsDown>
                 <Paper>{noteItems}</Paper>
             </Hidden>
             <Hidden smUp>{noteItems}</Hidden>
-        </div>
+        </>
     );
 };
 

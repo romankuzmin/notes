@@ -4,6 +4,7 @@
     "notes.add": "Füg ein Notiz hinzu",
     "notes.refresh": "Wiederherstellen",
     "notes.errors.fetching": "Unerwartete Fehlerladeliste",
+    "notes.list.blank": "Notizen sind leer. Es ist Zeit, eine zu erstellen ...",
     "notes.detail.form.title": "Name",
     "notes.detail.form.title.validation": "Der Name muss mindestens 3 Zeichen lang sein",
     "notes.detail.creating": "Ich erschaffe...",
