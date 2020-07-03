@@ -1,0 +1,11 @@
+{
+    "**/*.{md}": [
+        "prettier --write",
+        "git add"
+    ],
+    "**/*.{ts,tsx}": [
+        "yarn lint",
+        "prettier --parser typescript --write",
+        "git add"
+    ]
+}
