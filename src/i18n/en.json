@@ -2,6 +2,8 @@
     "app.locales": "Languages",
     "notes.title": "Notes",
     "notes.add": "Add Note",
+    "notes.refresh": "Refresh",
+    "notes.errors.fetching": "Unexpected error loading list",
     "notes.detail.form.title": "Title",
     "notes.detail.form.title.validation": "The name must be at least 3 characters long",
     "notes.detail.creating": "Creating...",
@@ -11,6 +13,7 @@
     "notes.detail.create": "Create",
     "notes.detail.save": "Save",
     "notes.detail.delete": "Delete",
-    "notes.detail.errors.updating": "Unexpected save error ... please try again later",
-    "notes.detail.errors.deleting": "Unexpected delete error ... please try again later"
+    "notes.detail.errors.fetching": "Unexpected load error... please try again later",
+    "notes.detail.errors.updating": "Unexpected save error... please try again later",
+    "notes.detail.errors.deleting": "Unexpected delete error... please try again later"
 }

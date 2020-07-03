@@ -2,6 +2,8 @@
     "app.locales": "Sprachen",
     "notes.title": "Aufgabenfeld",
     "notes.add": "Füg ein Notiz hinzu",
+    "notes.refresh": "Wiederherstellen",
+    "notes.errors.fetching": "Unerwartete Fehlerladeliste",
     "notes.detail.form.title": "Name",
     "notes.detail.form.title.validation": "Der Name muss mindestens 3 Zeichen lang sein",
     "notes.detail.creating": "Ich erschaffe...",
@@ -11,6 +13,7 @@
     "notes.detail.create": "Erstellen",
     "notes.detail.save": "Verhängen",
     "notes.detail.delete": "Entfernen",
-    "notes.detail.errors.updating": "Unerwarteter Speicherfehler ... versuchen Sie es später erneut",
-    "notes.detail.errors.deleting": "Unerwarteter Löschfehler ... versuchen Sie es später erneut"
+    "notes.detail.errors.fetching": "Unerwarteter Ladefehler.. versuchen Sie es später erneut",
+    "notes.detail.errors.updating": "Unerwarteter Speicherfehler... versuchen Sie es später erneut",
+    "notes.detail.errors.deleting": "Unerwarteter Löschfehler... versuchen Sie es später erneut"
 }

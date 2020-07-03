@@ -120,8 +120,8 @@ function* processCall<T>(actionFulfilled: ActionCreatorWithPayload<T>, id?: stri
         yield put(reset());
     } catch (e) {
         console.error(e.message);
-        let errorMessage =
-            method === 'PUT' || method === 'POST' ? 'notes.detail.errors.updating' : 'notes.detail.errors.fetching';
+        let errorMessage = method === 'GET' && id ? 'notes.detail.errors.fetching' : 'notes.errors.fetching';
+        errorMessage = method === 'PUT' || method === 'POST' ? 'notes.detail.errors.updating' : errorMessage;
         errorMessage = method === 'DELETE' ? 'notes.detail.errors.deleting' : errorMessage;
 
         yield put(error(errorMessage));

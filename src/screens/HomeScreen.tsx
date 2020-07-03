@@ -1,4 +1,4 @@
-import { Container, Drawer, Fab, Hidden, Theme } from '@material-ui/core';
+import { Button, Container, Drawer, Fab, Hidden, Snackbar, Theme } from '@material-ui/core';
 import IconButton from '@material-ui/core/IconButton';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
@@ -10,6 +10,7 @@ import React, { FC, useCallback, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'react-intl';
 
+import Alert from '../components/Alert';
 import Header from '../components/Header';
 import { LocaleSelect } from '../components/Locale';
 import LocaleList from '../components/Locale/LocaleList';
@@ -57,7 +58,7 @@ type HomeScreenProps = {
 const HomeScreen: FC<HomeScreenProps> = ({ history }) => {
     const classes = useStyles();
     const intl = useIntl();
-    const { notes, state } = useNotes();
+    const { notes, state, message, refresh } = useNotes();
     const [open, setOpen] = useState(false);
 
     const handleCreateNote = useCallback(() => {
@@ -67,6 +68,10 @@ const HomeScreen: FC<HomeScreenProps> = ({ history }) => {
     const handleMenu = useCallback(() => {
         setOpen(!open);
     }, [open]);
+
+    const handleRefresh = useCallback(() => {
+        refresh();
+    }, [refresh]);
 
     const title = intl.formatMessage({ id: 'notes.title' });
 
@@ -101,7 +106,19 @@ const HomeScreen: FC<HomeScreenProps> = ({ history }) => {
                         <FormattedMessage id="notes.add" />
                     </Fab>
                 </Hidden>
-                <NoteList items={notes} loading={state === 'fetching'} />
+                {state === 'rejected' && message ? (
+                    <Alert
+                        severity="error"
+                        message={message}
+                        action={
+                            <Button color="inherit" size="small" onClick={handleRefresh}>
+                                <FormattedMessage id="notes.refresh" />
+                            </Button>
+                        }
+                    />
+                ) : (
+                    <NoteList items={notes} loading={state === 'fetching'} />
+                )}
                 <Hidden smUp>
                     <Fab aria-label="Add" className={classes.fab} color="secondary" onClick={handleCreateNote}>
                         <AddIcon />

@@ -1,12 +1,13 @@
 import { Draft, PayloadAction } from '@reduxjs/toolkit';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import { createNote, deleteNote, fetchNote, fetchNotes, notify, updateNote } from './index';
 import { AppDispatch, useTypedSelector } from '../typed-hooks';
+import { createNote, deleteNote, fetchNote, fetchNotes, notify, updateNote } from './index';
 import { Note, ProcessState } from './types';
 
 type NotesHook = {
     notes: Note[];
+    refresh: () => void;
 };
 
 type NoteHook = {
@@ -47,6 +48,7 @@ export const useNotes = () => {
         notes: list,
         state: state,
         message: notify,
+        refresh: () => dispatch(fetchNotes()),
         notifyMessage: notifyMessage(dispatch),
     } as WithProcessStateAndNotify<NotesHook>;
 };
