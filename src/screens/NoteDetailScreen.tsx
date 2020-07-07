@@ -18,13 +18,13 @@ import { Edit as EditIcon } from '@material-ui/icons';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import DeleteIcon from '@material-ui/icons/Delete';
 import DoneIcon from '@material-ui/icons/Done';
-import { Alert as MuiAlert, AlertProps } from '@material-ui/lab';
 import { createStyles } from '@material-ui/styles';
 import { History } from 'history';
 import React, { FC, useCallback, useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { FormattedMessage, useIntl } from 'react-intl';
 import { match } from 'react-router-dom';
+import Alert from '../components/Alert';
 import Header from '../components/Header';
 import { LocaleSelect } from '../components/Locale';
 import NoteForm from '../components/NoteForm';
@@ -85,10 +85,6 @@ const ModeHandler: FC<ModeHandlerProps> = ({ mode, onClick, children }) => {
 
     return children(handleClick);
 };
-
-function Alert(props: AlertProps) {
-    return <MuiAlert elevation={6} variant="filled" {...props} />;
-}
 
 type DetailScreenProps = {
     history: History;
@@ -197,6 +193,8 @@ const NoteDetailScreen: FC<DetailScreenProps> = ({ history, match }) => {
         appTitle = `${appTitle} - ${intl.formatMessage({ id: 'notes.add' })}`;
     }
 
+    const snackbarMessage = message ? message : '';
+
     return (
         <>
             <Helmet>
@@ -300,15 +298,13 @@ const NoteDetailScreen: FC<DetailScreenProps> = ({ history, match }) => {
 
                         <Snackbar
                             className={hasError ? classes.snackbarError : undefined}
-                            open={openSnackbar && message !== ''}
+                            open={openSnackbar && snackbarMessage !== ''}
                             autoHideDuration={1500}
                             message={
                                 hasError ? (
-                                    <Alert severity="error">
-                                        <FormattedMessage id={message} />
-                                    </Alert>
+                                    <Alert severity="error" message={snackbarMessage} />
                                 ) : (
-                                    <FormattedMessage id={message} />
+                                    <FormattedMessage id={snackbarMessage} />
                                 )
                             }
                             action={
