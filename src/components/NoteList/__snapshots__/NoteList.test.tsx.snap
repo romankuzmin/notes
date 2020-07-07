@@ -1,0 +1,372 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NoteList Render blank list 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <nav
+      class="MuiList-root MuiList-padding"
+    >
+      <div
+        class="MuiListItemText-root makeStyles-emptyList-1"
+      >
+        <span
+          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+        >
+          Notes are blank. It's time to create one ...
+        </span>
+      </div>
+    </nav>
+  </div>
+  ,
+</DocumentFragment>
+`;
+
+exports[`NoteList Render list with loading state 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <nav
+      class="MuiList-root MuiList-padding"
+    >
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+    </nav>
+  </div>
+  ,
+</DocumentFragment>
+`;
+
+exports[`NoteList Render list with two items 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+  >
+    <nav
+      class="MuiList-root MuiList-padding"
+    >
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+      <li
+        class="MuiListItem-root MuiListItem-gutters"
+      >
+        <div
+          class="MuiListItemText-root"
+        >
+          <span
+            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+          >
+            <span
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave"
+              style="height: 15px;"
+            />
+          </span>
+        </div>
+      </li>
+    </nav>
+  </div>
+  ,
+</DocumentFragment>
+`;
