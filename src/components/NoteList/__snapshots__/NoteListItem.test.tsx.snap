@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render default item 1`] = `
+<DocumentFragment>
+  <div
+    class="makeStyles-root-1"
+  >
+    <a
+      aria-disabled="false"
+      class="MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button"
+      href="/1"
+      role="button"
+      tabindex="0"
+    >
+      <div
+        class="MuiListItemText-root"
+      >
+        <span
+          class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+        >
+          Note test
+        </span>
+      </div>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </a>
+  </div>
+</DocumentFragment>
+`;
